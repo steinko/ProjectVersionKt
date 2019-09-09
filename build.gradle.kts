@@ -20,3 +20,24 @@ repositories {
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
 }
+
+val printVersion by tasks.registering { 
+   doFirst {
+		println ("Before reading the project version")
+	}
+	doLast {  
+		println ("Version: $version")
+	}
+}
+
+printVersion {
+   doFirst { 
+	   println ("First Action")
+   }
+}
+
+printVersion {
+     doLast { 
+	     println ("Last Action")
+	 }
+}
