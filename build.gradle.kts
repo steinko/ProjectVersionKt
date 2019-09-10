@@ -18,7 +18,7 @@ repositories {
 }
 
 dependencies {
-    implementation(kotlin("stdlib-jdk8"))
+    implementation(kotlin("stdlib-jdk8")) 
 }
 
 val printVersion by tasks.registering { 

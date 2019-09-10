@@ -16,6 +16,12 @@ dependencies {
 
     // Use the Kotlin JDK 8 standard library.
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    
+    // Use the Kotlin reflect.
+    implementation("org.jetbrains.kotlin:kotlin-reflect")
+    
+    // Use the Kotlin reflect.
+    testImplementation("org.jetbrains.kotlin:kotlin-reflect")
 
     // Use the Kotlin test library.
     testImplementation("org.jetbrains.kotlin:kotlin-test")
@@ -31,6 +37,14 @@ dependencies {
     // include JUnit 5 test engine
     testRuntimeOnly ("org.junit.jupiter:junit-jupiter-engine:5.2.0") 
     
+  //log slf4j 
+   implementation ("org.slf4j:slf4j-api:2.0.0-alpha0")
+   implementation ("ch.qos.logback:logback-classic:1.3.0-alpha4")
+   implementation ("ch.qos.logback:logback-core:1.3.0-alpha4")
+   
+   testImplementation ("org.slf4j:slf4j-api:2.0.0-alpha0")
+   testImplementation ("ch.qos.logback:logback-classic:1.3.0-alpha4")
+   testImplementation ("ch.qos.logback:logback-core:1.3.0-alpha4")
 }
 
 tasks {
