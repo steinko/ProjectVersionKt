@@ -19,23 +19,22 @@ object PrintVersionSystemTest : Spek({
                 Then("should test build script") {
                     assertThat(result.getOutput()).contains("BUILD SUCCESSFUL")
                 }
-                
+
                 Then("should print Version: 0.1-SNAPSHOT") {
-		             assertThat(result.getOutput()).contains("Version: 0.1-SNAPSHOT")	
-	            }
-	
-	           Then("should print Before reading the project version") {
-	       	         assertThat(result.getOutput()).contains("Before reading the project version")
-	           }
-	
-	          Then ( "should print fisrt action" ) {
-		            assertThat(result.getOutput()).contains("First Action")
-	           }
-	
-	           Then("should print last action") {
-		             assertThat(result.getOutput()).contains("Last Action")
-	           }
-	
-          }
-     }
+                    assertThat(result.getOutput()).contains("Version: 0.1-SNAPSHOT")
+                }
+
+                Then("should print Before reading the project version") {
+                    assertThat(result.getOutput()).contains("Before reading the project version")
+                }
+
+                Then("should print fisrt action") {
+                    assertThat(result.getOutput()).contains("First Action")
+                }
+
+                Then("should print last action") {
+                    assertThat(result.getOutput()).contains("Last Action")
+                }
+            }
+        }
 })

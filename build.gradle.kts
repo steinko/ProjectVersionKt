@@ -1,11 +1,9 @@
 plugins {
- 
     kotlin("jvm") version "1.3.50"
     id("org.jmailen.kotlinter") version "2.1.1"
+   
 }
-
 import org.steinko.projectversion.ProjectVersion
-
 val myProp: String by extra
 extra["myProp"] = "myValue"
 
@@ -19,6 +17,7 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib-jdk8")) 
+    
 }
 
 val printVersion by tasks.registering { 
